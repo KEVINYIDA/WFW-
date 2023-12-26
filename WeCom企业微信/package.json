@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@koa/router": "^12.0.1",
+    "all": "^0.0.0",
+    "axios": "^1.6.2",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-xml-body": "^3.0.0",
+    "moment-timezone": "^0.5.43",
+    "winston": "^3.11.0"
+  }
+}

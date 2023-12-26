@@ -1,0 +1,58 @@
+{
+  "city": {
+    "name": "北京",
+    "areas": [
+      {
+        "name": "东城区",
+        "externalcontactGroupConfig": {
+          "config_id": "cy-9ad7fa5cdaa6511298498f979c4722de",
+          "scene": 2,
+          "remark": "bb_remark",
+          "auto_create_room": 1,
+          "room_base_name": "东城区服务群",
+          "room_base_id": 10,
+          "chat_id_list": [
+            "wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+            "wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa"
+          ],
+          "state": "chaoyang"
+        },
+        "chat_id_list_all": [
+          "cy-wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa1",
+          "cy-wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa1",
+          "cy-wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+          "cy-wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa",
+          "wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+          "wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa",
+          "cy-wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa2"
+        ],
+        "qr_code": "https://pub.fsgo365.cn/groupchat1.jpg"
+        
+      },
+      {
+        "name": "西城区",
+        "externalcontactGroupConfig": {
+          "config_id": "xc-9ad7fa5cdaa6511298498f979c4722de",
+          "scene": 2,
+          "remark": "bb_remark",
+          "auto_create_room": 1,
+          "room_base_name": "西城区服务群",
+          "room_base_id": 10,
+          "chat_id_list": [
+            "wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+            "wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa"
+          ],
+          "state": "xicheng"
+        },
+        "chat_id_list_all": [
+          "xc-wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+          "xc-wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa",
+          "wrOgQhDgAAH2Yy-CTZ6POca8mlBEdaaa",
+          "wrOgQhDgAALPUthpRAKvl7mgiQRw_aaa"
+        ],
+        
+        "qr_code": "https://pub.fsgo365.cn/groupchat2.jpg"
+      }
+    ]
+  }
+}
