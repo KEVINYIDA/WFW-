@@ -1,0 +1,94 @@
+<view class="background">
+<view class="title">创新型企业入群登记表</view>
+<view class="subtitle">创新型中小企业服务群由北京市中小企业公共服务平台运营单位北京国融工发投资管理有限公司建设并运营服务，请依照表单如实填写信息，以便智能助手协助您入群。</view>
+</view>
+
+<mp-form-page>
+
+  <view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells__title">登记表（*为必填项）</view>
+        
+				<view class="weui-cells weui-cells_form">
+
+          <view class="weui-cell">
+						<view class="weui-cell__hd"><label class="weui-label">* 企业名称</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" style="margin-left: 13px;" maxlength="20" value="{{formData.name}}" bindinput="onCompanyNameInput" type="companyname" id="name" name="name" placeholder="填写企业名称" placeholder-class="weui-input__placeholder" />
+						</view>
+
+            <view wx:if="{{suggestions.length > 0}}" class="suggestions">
+              <view wx:for="{{suggestions}}" wx:key="{{index}}" class="suggestion-item" bindtap="onSuggestionSelect" data-company-name="{{item}}">
+                {{item}}
+              </view>
+            </view>
+					</view>
+       
+          <label>
+                    <mp-cell  ext-class="weui-cell_select weui-cell_select-after">
+                   
+                        <view slot="title" class="weui-label">* 注册区县</view>
+                      
+                        <picker bindchange="bindDistrictChange" value="{{formData.district}}" range="{{district}}">
+                            <view class="weui-select" style="margin-left: 13px;">{{district[districtIndex]}}</view>
+                        </picker>
+                    </mp-cell>
+            </label>
+
+            <view class="weui-cell">
+              <view class="placeholder" style="color:white;width:3vw;">*</view>
+						<view class="weui-cell__hd"><label class="weui-label">所属产业</label><label class="weui-label" style="white-space: nowrap;">(最多选2个)</label></view>
+            <mp-cells>
+            <mp-checkbox-group prop="checkbox" multi="{{true}}" bindchange="checkboxChange">
+            <mp-checkbox wx:for="{{checkboxItems}}" wx:key="value" label="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}"></mp-checkbox>
+            </mp-checkbox-group>
+            </mp-cells>
+            </view>
+
+					<view class="weui-cell">
+            <view class="placeholder" style="color:white;width:3vw;">*</view>
+						<view class="weui-cell__hd"><label class="weui-label">办公地址</label></view>
+						<view class="weui-cell__bd">
+							<textarea class="weui-input" maxlength="30" value="{{formData.address}}" bindinput="handleAddressChange" type="companyaddress" id="address" name="  address" placeholder="填写办公地址" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+
+					<view class="weui-cell">
+            <view class="placeholder" style="color:black;width:3vw;">*</view>
+						<view class="weui-cell__hd">
+            <label class="weui-label">姓名</label>
+            </view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" maxlength="5" value="{{formData.nama}}" bindinput="handleNamaChange" type="nickname" id="nama" name="nama"  placeholder="填写本人姓名" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+          
+					<view class="weui-cell">
+          <view class="placeholder" style="color:black;width:3vw;">*</view>
+					<view class="weui-cell__hd">
+                <label class="weui-label">联系方式</label>
+          </view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" maxlength="15" value="{{formData.contact}}" bindinput="handleContactChange" id="contact"   name="contact"  placeholder="填写本人联系方式" type="number" placeholder-class="weui-input__placeholder" />
+						</view>
+					</view>
+          
+          <view class="weui-cell__bd">
+          <label>
+              <mp-cell  ext-class="weui-cell_select weui-cell_select-after">
+              <view slot="title" class="weui-label" style="white-space: nowrap;">* 岗位或职务</view>  
+              <picker bindchange="bindJobChange" value="{{formData.job}}" range="{{job}}">
+              <view class="weui-select" style="margin-left: 13px;">{{job[jobIndex]}}</view>
+                        </picker>
+                    </mp-cell>
+            </label>    
+          </view>  
+            
+				</view>
+			</view>
+		</view>
+    
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+    </view>
+</mp-form-page>

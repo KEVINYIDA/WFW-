@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/qrcodePage/qrcodePage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创新型企业入群登记表",
+    "navigationBarTextStyle":"black"
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

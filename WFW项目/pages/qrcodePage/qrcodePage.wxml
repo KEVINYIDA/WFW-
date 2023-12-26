@@ -1,0 +1,17 @@
+<view class="content">
+<view class="container">
+  
+<image class="pic" src="/images/pic.png" mode="aspectFit">
+</image>
+  <!-- 信息框 -->
+  <mp-title class="title">
+    您已登记成功！
+  </mp-title>
+
+  <!-- 二维码和注释 -->
+  <view class="qrcode-container">
+    <image class="qrcode" src="{{qrcode}}" mode="aspectFit" bindlongpress="handleLongPress" show-menu-by-longpress="{{true}}"/>
+    <view class="qrcode-comment">长按二维码进群</view>
+  </view>
+</view>
+</view>
